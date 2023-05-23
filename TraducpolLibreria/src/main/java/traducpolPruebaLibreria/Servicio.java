@@ -1,39 +1,29 @@
 package traducpolPruebaLibreria;
 
-public abstract class Servicio {
+public abstract class Servicio implements Serviciable {
 	public static enum Tipo {
 		TRADUCCION, INTERPRETACION
 	}
 	
-
-	private Long id;
 	private String idioma;
 	
-	private Empresa empresa;
+	
+	@Override
 	public String getIdioma() {
 		return idioma;
 	}
+	@Override
 	public void setIdioma(String idioma) {
 		this.idioma = idioma;
 	}
+	@Override
 	public Tipo getTipo() {
 		return null;
 	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public Empresa getEmpresa() {
-		return empresa;
-	}
-	public void setEmpresa(Empresa empresa) {
-		this.empresa = empresa;
-	}
+	
 	@Override
 	public String toString() {
-		return "Servicio [id=" + id + ", idioma=" + idioma + ", empresa=" + empresa + "]";
+		return "Servicio [idioma=" + idioma + "]";
 	}
 	
 }
