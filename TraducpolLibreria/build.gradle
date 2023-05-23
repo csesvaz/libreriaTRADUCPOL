@@ -1,20 +1,18 @@
 plugins {
 	id 'java'
 	id 'java-library'
+	 id 'eclipse'
 }
-
-group = 'es.mdef'
-version = '0.0.1-SNAPSHOT'
-
 repositories {
 	mavenCentral()
-
+ maven { url 'https://jitpack.io' }
 }
 
 group = 'es.mdef'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
