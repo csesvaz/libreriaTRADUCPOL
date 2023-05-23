@@ -1,6 +1,5 @@
 package traducpolPruebaLibreria;
 
-import java.util.List;
 
 public interface Empresable {
 

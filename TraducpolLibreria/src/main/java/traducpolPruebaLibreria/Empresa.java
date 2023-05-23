@@ -1,6 +1,6 @@
 package traducpolPruebaLibreria;
 
-import java.util.List;
+
 
 public class Empresa implements Empresable {
 
