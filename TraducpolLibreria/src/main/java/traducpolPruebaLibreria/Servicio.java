@@ -1,12 +1,14 @@
 package traducpolPruebaLibreria;
 
+	
+
 public abstract class Servicio implements Serviciable {
 	public static enum Tipo {
 		TRADUCCION, INTERPRETACION
 	}
 	
 	private String idioma;
-	
+	private Empresable empresa;
 	
 	@Override
 	public String getIdioma() {
@@ -24,6 +26,14 @@ public abstract class Servicio implements Serviciable {
 	@Override
 	public String toString() {
 		return "Servicio [idioma=" + idioma + "]";
+	}
+
+	@Override
+	public Empresable getEmpresa() {
+		return empresa;
+	}
+	public void setEmpresa(Empresable empresa) {
+		this.empresa = empresa;
 	}
 	
 }

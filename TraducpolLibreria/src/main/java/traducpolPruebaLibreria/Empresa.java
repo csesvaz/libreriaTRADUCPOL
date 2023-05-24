@@ -1,5 +1,6 @@
 package traducpolPruebaLibreria;
 
+import java.util.List;
 
 
 public class Empresa implements Empresable {
@@ -9,8 +10,15 @@ public class Empresa implements Empresable {
 	private String email;
 	private String telefono;
 	private String cif;
+	List<Serviciable>servicios;
 	
-
+	@Override
+	public List<Serviciable> getServicios() {
+		return servicios;
+	}
+	public void setServicios(List<Serviciable> servicios) {
+		this.servicios = servicios;
+	}
 	@Override
 	public String getNombre() {
 		return nombre;

@@ -1,5 +1,6 @@
 package traducpolPruebaLibreria;
 
+import java.util.List;
 
 public interface Empresable {
 
@@ -22,5 +23,5 @@ public interface Empresable {
 	String getEmail();
 
 	void setEmail(String email);
-
+	List<Serviciable> getServicios();
 }
